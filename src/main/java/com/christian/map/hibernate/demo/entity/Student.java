@@ -1,10 +1,8 @@
 package com.christian.map.hibernate.demo.entity;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue(value="STUDENT") //will default to Student (class name)
 public class Student extends User{
 
     private String course;

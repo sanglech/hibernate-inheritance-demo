@@ -13,10 +13,10 @@
         <property name="connection.password">password</property>
 
         <!-- JDBC connection pool settings ... using built-in test pool -->
-        <property name="connection.pool_size">1</property>
+        <property name="connection.pool_size">10</property>
 
         <!-- Select our SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
         <!-- Select our SQL dialect Needed for Map for some reason -->
        <!-- <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property> -->

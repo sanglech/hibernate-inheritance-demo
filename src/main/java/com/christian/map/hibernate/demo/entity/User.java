@@ -4,12 +4,11 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name="student")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="USER_VALUE",discriminatorType = DiscriminatorType.STRING)
+@Table(name="user")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private int id;
 
     @Column(name = "first_name")
