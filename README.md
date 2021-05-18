@@ -1,0 +1,1 @@
+# hibernate-inheritance-components-demo
