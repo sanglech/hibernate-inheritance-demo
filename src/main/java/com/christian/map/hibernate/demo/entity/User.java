@@ -3,9 +3,10 @@ package com.christian.map.hibernate.demo.entity;
 import javax.persistence.*;
 
 
-@Entity
-@Table(name="user")
-@Inheritance(strategy = InheritanceType.JOINED)
+//@Entity
+//@Table(name="user")
+//@Inheritance(strategy = InheritanceType.JOINED)
+@MappedSuperclass
 public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
